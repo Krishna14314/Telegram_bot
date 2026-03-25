@@ -1,3 +1,4 @@
+import os 
 import requests
 from bs4 import BeautifulSoup
 import datetime
@@ -10,7 +11,7 @@ from telegram.ext import (
     filters
 )
 
-TOKEN = "8680978500:AAGGna0fqxdxKiDrHo-VB6FWPgNk-Reba40"
+TOKEN = os.getenv("TOKEN")
 CHAT_ID = "5634233006"   # un chat id
 
 # 🔎 Job Scraper
